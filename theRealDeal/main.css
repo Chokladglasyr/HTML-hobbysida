@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Sätter margin för hela sidan och en bakgrundsfärg */
+body {
+    background-color: #832161;
+    margin: 0;
+}
+
+main,
+header,
+footer {
+    background-color: #f7eef3;
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* SLUT */
+
+
+/* Styling för HEADER */
+h1 {
+    height: 150px;
+    grid-area: titel;
+}
+
+header img {
+    margin: 0 auto;
+    border-style: double;
+    grid-area: img;
+}
+
+aside {
+    width: auto;
+    grid-area: aside;
+    margin-left: 15%;
+}
+
+aside p {
+    border-style: dotted;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #D9D375;
+}
+
+/* SLUT PÅ STYLING AV HEADER */
+
+/* GRID FOR HEADER */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    /* height: 80vh; */
+    grid-template-areas:
+        "titel titel titel"
+        "aside img nav"
+}
+
+/* SLUT PÅ GRID STYLING FOR HEADER */
+
+/* START av styling för nav bar till dropdown */
+
+nav {
+    display: inline-block;
+    grid-area: nav;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.nav {
+    /* sätter länkarna gömda så de inte syns */
+    display: none;
+    position: absolute;
+    background-color:#ece2e9;
+    ;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+li a {
+    /* Sätter stilen på länkar i dropdown */
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+
+}
+
+/* När man hover över länkar i dropdown så ändras de färg */
+li a:hover {
+    color: #832161;
+}
+
+/* sätter stiler på h2 headings */
+h2 {
+    margin-bottom: 5px;
+    width: 300px;
+    background-color: none;
+}
+
+/* När man hover över texten genvägar så ska den ändra färg */
+nav:hover {
+    color: #832161;
+}
+
+nav:hover .nav {
+    /* när man hover så ska dropdown synas */
+    display: block;
+}
+
+/* SLUT */
+
+fieldset {
+    width: 90%;
+    margin: 0 auto;
+}
+
+article {
+    margin: 20px auto;
+    width: 90%;
+}
+
+#last-article {
+    margin-bottom: 0;
+}
+
+/* STYLING FÖR TABELLER */
+table,
+th,
+td {
+    border: #832161 solid 1px;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    height: 40px;
+}
+
+#kostnads-tabell {
+    width: 50%;
+    text-align: center;
+
+}
+
+/* SLUT PÅ STYLING FÖR TABELLER */
+
+/* STYLING PÅ BILDER OCH VIDEO */
+figure,
+video {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0;
+}
+
+#hungrig {
+    text-align: center;
+    display: block;
+}
+#hungrig>img {
+    display: inline;
+}
+img,
+video {
+    box-shadow: 5px 8px #8b734f;
+    height: 12rem;
+    display: flex;
+}
+#instagram {
+    box-shadow: none;
+    transition: 2s;
+}
+#instagram:hover {
+    height: 18rem;
+    transform:rotate(180deg)
+}
+
+iframe {
+    border: 0;
+    margin: 0 auto;
+    display: block;
+}
+.small>video {
+    height: 300px;
+}
+/* footer>.XL> {
+    margin-bottom: 20px;
+} */
+/* SLUT */
+
+/* START */
+details {
+    font-size: 2em;
+    width: fit-content;
+    border-radius: 2px;
+    padding: 1rem;
+    border-style: groove;
+}
+
+/* SLUT */
+
+/* START */
+#tillbaka-knapp {
+    background-color: #e738ad;
+    border-radius: 5px;
+    position: sticky;
+    bottom: 20px;
+    left: 100%;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+/* SLUT */
+
+/* START */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.contact>form, a {
+    width: fit-content;
+    height: fit-content;
+}
+.contact>iframe {
+    margin: 0;
+}
+
+/* START PÅ RESPONSIVE DESIGN FÖR MOBIL */
+@media (max-width: 900px) {
+
+    main, header, footer {
+        width: 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1fr 1fr;
+        grid-template-areas:
+            "titel"
+            "img"
+            "nav"
+            "aside"
+    }
+
+    #kostnads-tabell {
+        width: 100%;
+    }
+
+    /* START , BILDER */
+    iframe {
+        width: 100%;
+    }
+
+    small img,
+    video {
+        height: 150px;
+    }
+
+    .medium img {
+        height: 100px;
+    }
+
+    .XL img {
+        flex-flow: row wrap;
+        height: 100px;
+    }
+
+    figure img {
+        flex-flow: row nowrap;
+        /* justify-content: center; */
+    }
+
+    header img {
+        margin-top: 20px;
+    }
+
+    /* SLUT */
+
+    header h2 {
+        text-align: center;
+    }
+
+    aside {
+        margin: 0;
+    }
+
+}

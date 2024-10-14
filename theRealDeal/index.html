@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Bakverk till Underverk</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/theRealDeal/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="grid-container">
+        <h1 id="welcome">Välkommen hit<!-- Variabel MyName ska in här -->!</h1>
+        <img src="/images/self.jpg" alt="Ida" width="auto" height="300" >
+
+        <aside>
+            <p>
+                Den här sidan är en del av kursen HTML och CSS. <br> Målet är att skapa en sida med enbart HTML för att sedan styla den i CSS.
+                <br>Mitt mål har varit att hitta så mycket olika element jag kan och inkorporera det i min sida. <br>Jag vill självklart få allt att vara relevant.
+                Däremot finns det nog onödigt mycket olika element för den här lilla sidan, men jag är här för att lära mig så mycket jag kan. <br>Practice makes perfect.
+            </p>
+        </aside>
+        <!-- Gör genvägarna statiska på höger sida -->
+        <nav>
+            <!-- Använde nav till interna länkar pga har inga fler sidor -->
+            <h2>Genvägar</h2>
+            <ul class="nav">
+                <li><a href="#rubrik1">Vad kan man göra?</a> &nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#rubrik2">Säsonger!</a> &nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#rubrik3">Vart kan jag köpa madeleine kakor?</a> &nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#rubrik4">Tid</a> &nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#rubrik5">Bakning är inkluderande!</a> &nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#rubrik6">To bake or not to bake?</a> &nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#rubrik7">Slutord</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+                <!-- Utnyttjat fieldsat för att göra lite snyggare, kanske kan skippas när man introducerar css -->
+                <fieldset>
+                    <legend>Om mig</legend>
+                    <p>
+                        Jag heter Ida och jag gillar att baka! Jag lärde mig att
+                        baka från min mamma och min mormor. Mormor bakade mycket bröd och mjuka
+                        kakor. Min mamma bakar mycket vetedegar (alltså bullar och liknande),
+                        småkakor, tårtor och desserter. Mitt bidrag och nästa steg i
+                        utvecklingen är att jag gillar att dekorera också. Det är inte lätt att
+                        klå min mamma i smak men jag kan dekorera snäppet bättre! Förvarning,
+                        det kommer bli en del bilder, men det behövs för att kunna förklara
+                        vilka möjligheter det finns. Varför man ens ska baka, om jag bara säger
+                        kaka, vad är det du ser i ditt huvud? Inte detta... Och innan du ställer frågan,
+                        ja, jag har bakat allt själv, och nej det finns inga recept. Jag googlar.
+                    </p>
+                </fieldset>
+        <!-- Använde articles för varje "kapitel/inlägg" bara för att ha använt den strukturen fastän det egentligen inte är mycket i varje sektion -->
+        <article>
+            <h3 id="rubrik1">Vad kan man göra?</h3>
+            <p>
+                När du kan baka så blir det billigare och roligare. Till exempel kan
+                du göra en egen studenttårta, precis så som du vill ha den! Eller
+                kanske en kaktus tårta till din kompis som älskar kaktusar!
+            </p>
+            <figure class="medium">
+                <!-- använt mig av figure för att samla alla bilder plus det gav en bra avstånd ut från sidan -->
+                <img src="/images/student.jpg" alt="Studenttårta" width="auto" height="300" >
+                <img src="/images/tropical.jpg" alt="Kaktus tårta" width="auto" height="300" >
+                <img src="/images/unicornatecake.jpg" alt="Unicorn ate cake" width="auto" height="300" >
+            </figure>
+            <p>
+                Det behöver dock inte alla gånger vara snyggt, du kan dessutom äta hur
+                mycket du vill för det brukar vara mindre socker i än när du köper
+                färdigt. Färdigt har oftast mer socker i, för att göra den godare och mer lockande. Det innehåller mer
+                av andra saker, konserveringsmedel, x antal e-ämnen... Ja, allt möjligt som du inte behöver lägga i när
+                du bakar själv.
+            </p>
+            <figure class="small" id="hungrig">
+                <img src="/images/bigpiece.jpeg" alt="Stor bit kaka" width="auto" height="300" >
+                <figcaption>Du ser, här var jag tydligen extremt hungrig på drömrulltårta! &#128517</figcaption>
+            </figure>
+        </article>
+        <article>
+            <h3 id="rubrik2">Säsonger!</h3>
+            <p>Julbak! Behöver jag ens förklara vilka möjligheter du har?! Kommer du ihåg trillingnöten som togs bort
+                från Aladdin asken?
+                Du kan ju göra den själv! Hur många du vill!
+            </p>
+            <figure class="XL">
+                <img src="/images/xmasbuffe.jpg" alt="Buffe" height="300" >
+                <img src="/images/xmascookies.jpg" alt="Julkakor" height="300" >
+                <img src="/images/struvor.jpg" alt="Struvor" height="300" >
+                <img src="/images/trilling.jpg" alt="Trillingnöt" height="300">
+            </figure>
+        </article>
+        <article>
+            <h3 id="rubrik3">Vart kan jag köpa madeleine kakor?</h3>
+            <p>
+                Vissa bakverk går inte ens att köpa, hur ska du då göra om du inte kan
+                baka? Vet du ett ställe som säljer madeleine kakor? Eller såna donuts
+                på tv, glazed donuts...
+            </p>
+            <figure class="small">
+                <img src="/images/madeleine.jpg" alt="Madeleine kakor" width="auto" height="300" >
+                <img src="/images/donuts.png" alt="Donuts" width="auto" height="300" >
+            </figure>
+            <p>
+                Du har också möjlighet att baka något helt eget. Vad sägs om
+                hjärtformade oreos? Åh, med extra mycket fyllning! Eller såna mochis
+                du ser på tiktok!
+            </p>
+            <figure class="medium">
+                <img src="/images/oreocookies.jpeg" alt="Oreos" width="auto" height="300" >
+                <img src="/images/mochi.jpeg" alt="Mochi" width="auto" height="300" >
+                <video controls src="/images/satisfyingmochi.mp4" alt="Mochi" height="300"></video>
+            </figure>
+        </article>
+        <article>
+            <h3 id="rubrik4">Tid</h3>
+            <p>
+                Oftast tänker man att det tar tid att baka själv, och ja det tar
+                längre tid än att köpa, men så mycket godare, inte ens värt att köpa i
+                jämförelse. Plus för pyttelite extra tid kan du göra det så mycket mer
+                fancy! En vanlig brownie, men med fancy grädde på. En vanlig petit
+                choux men klipp locket och spritsa ut svanhuvuden.
+            </p>
+            <figure class="small">
+                <img src="/images/brownie.jpg" alt="Brownie" width="auto" height="300" >
+                <img src="/images/swanchoux.png" alt="Petit choux" width="auto" height="300" >
+            </figure>
+        </article>
+
+        <article>
+            <h3 id="rubrik5">Bakning är inkluderande!</h3>
+            <p>
+                Här kan du se hur bakning som en aktivitet kan vara väldigt
+                inkluderande. Man kan inkludera sina barn, eller göra det till en
+                romantiskt aktivitet med sin partner! Det är dessutom lärorikt för barn! Det tränar deras motorik, fin
+                motoriken främst.
+                De lär sig om vad saker och ting innehåller och uppskattar sedan när andra bakar eller lagar mat då det
+                har förståelse för
+                hur mycket jobb man lägger ner. När man sedan kan skapa egna grejer så lär man dem samma sak, om de vill
+                ha något så kan de
+                i så fall gör det själva!
+            </p>
+            <figure class="small">
+                <video controls src="/images/muffins2.mp4" alt="Video making muffins" height="300"></video>
+            </figure>
+        </article>
+        <article id="last-article">
+            <h3 id="rubrik6">To bake or not to bake?</h3>
+            <p>Fortfarande oklart? Låt oss köra en klassik pro vs con lista!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Fördelar</th>
+                        <th scope="col">Nackdelar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Oftast billigare</li>
+                                <li>Man får exakt det man är sugen på</li>
+                                <li>Man kan ish bestämma sockermängden själv</li>
+                                <li>
+                                    Blir oftast naturligt mindre socker och mindre annat skit
+                                </li>
+                                <li>Blir oftast finare och mjukare (färskare)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kan ta tid, beror på vad du gör</li>
+                                <li>
+                                    Måste handla (men det måste du om du ska köpa en kaka också)
+                                </li>
+                                <li>
+                                    Inte samma hållbarhet (pga innehåller mindre annat skit)
+                                </li>
+                                <li>
+                                    Måste ha plats i kylskåpet (om det behövs, men om du köpt
+                                    färdigt behöver den också plats i kylskåpet)
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Ett annat sätt att se på saken:</p>
+            <table id="kostnads-tabell">
+                <!-- La in en till mer klassisk tabell -->
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Baka själv</th>
+                        <th scope="col">Köpa färdigt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Handla</th>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kostnad</th>
+                        <td>24kr</td>
+                        <td>18kr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tid</th>
+                        <td>45-60min</td>
+                        <td>okänd</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Obs! Kostnaden ovan är på en sockerkaka, priserna är från
+                <a title="Länk till affär"
+                    href="https://www.hemkop.se/handla?gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQjwu-63BhC9ARIsAMMTLXRdtkC7x5HRyVQ9SOLxD0xvmtregdueByJ8w4ZEzU2Gykn4krFofMQaAlbFEALw_wcB&gclsrc=aw.ds">Hemköp</a>,
+                den färdiga kakan är mindre i storlek jämfört med när du bakat själv.
+                Tid okänd då det beror på vart närmsta affären är för dig och om det är kö i butiken eller inte.
+                Tid för baka är handlingstiden exkluderad då ingredienserna för sockerkaka är oftast ingredienser man
+                har hemma. Vill du inte äta bakverken och vill tänka på
+                figuren så finns det annat man kan göra med bakverken också!
+            </p>
+            <!-- Bäddat in en youtube video -->
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/rf18VP6rpo8?si=bV1xt3atrPgwLVNZ&amp;start=40"
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <br><br><br>
+            <details id="rubrik7">
+                <summary>
+                    Slutord
+                </summary>
+                <p>
+                    Sammanfattningsvis så finns det inte mycket att förlora på att baka
+                    själv. Hoppas jag lämnade dig tillräckligt sugen på bakverk att du
+                    börjar baka!
+                </p>
+                <figure>
+                    <img src="/images/lovecake.jpg" alt="Älskar tårta" height="300">
+                </figure>
+            </details>
+        </article>
+    </main>
+    <footer>
+        <section class="contact">
+            <br><br>
+            <a href="https://www.instagram.com/dellaailing/"><img id="instagram" src="/images/icon/insta.png" alt="instagram icon"></a>
+            <br><br><br>
+            <!-- En form med method post för att få texten in i ett mejl -->
+            <form action="mailto:ida.lim@chasacademy.se" method="post">
+                <textarea name="message" id="mailMessage"></textarea>
+                <br>
+                <button type="submit">Mail me!</button>
+            </form>
+            <br>
+            <iframe
+                title="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16263.053013386505!2d17.85981925!3d59.3683145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1728163417245!5m2!1ssv!2sse"
+                width="400" height="300" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <address>Stockholm, Sverige</address>
+        <figure class="XL">
+            <img src="/images/flowercake.jpg" alt="Tårta med blommor" width="auto" height="200" >
+            <img src="/images/minnie.jpg" alt="Minnie Mouse tårta" width="auto" height="200" >
+            <img src="/images/stormtrooper.JPG" alt="Stormtrooper tårta" width="auto" height="200" >
+            <img src="/images/chocoookies.jpg" alt="Cookies" height="200">
+            <img src="/images/unicorncakes.jpg" alt="Unicorn tårtor" height="200">
+        </figure>
+    </footer>
+    <a id="tillbaka-knapp" href="#welcome">^</a>
+</body>
+
+</html>

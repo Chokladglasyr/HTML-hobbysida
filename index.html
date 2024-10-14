@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiousity killed the cat.</title>
+    <link rel="shortcut icon" href="/images/icon/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- En första sida med diverse forms -->
+    <img src="/images/IMG-20200306-WA0003.jpeg" alt="Ida" height="200">
+    <br>
+    <audio controls src="/images/2 Oct, 12.59_.mp3"></audio>
+    <br><br>
+    <form method="get" action="/theRealDeal/index.html">
+        <!-- En form action som tar läsaren till den riktiga hobbysidan -->
+        <label for="namn">Hej, vad heter du?</label>
+        <br>
+        <!-- Med kanske JavaScript skulle man kunna lägga in så att namnet man fyller i här tas in i den riktiga sidan och man blir välkomnad med namnet man skrev in här. -->
+        <input type="text" name="MyName" id="namn" placeholder="Jag heter...">
+        <br><br>
+        <label>Hur mår du?
+            <!-- Använde istället label som Olli-Heikki gjorde i sin video -->
+            <select>
+                <option value="">Välj mest passande</option>
+                <optgroup label="Positiva">
+                    <option value="bra">Bra!</option>
+                    <option value="grymt">Grymt!</option>
+                </optgroup>
+                <optgroup label="Negativa">
+                    <option value="mindre_bra">Mindre bra...</option>
+                    <option value="hemskt">Hemskt!</option>
+                </optgroup>
+            </select>
+        </label>
+        <br><br>
+        <label>
+            Dagens datum:
+            <input type="date">
+        </label>
+        <br><br>
+        <fieldset>
+            <legend>Framsteg</legend>
+            <label>
+                Snart klar... <br>
+                <progress max="100" value="75">75%</progress>
+            </label>
+            <br>
+        </fieldset>
+        <p>Hur intresserad är du av att se vad jag har skapat?</p>
+        <input type="radio" name="answer" id="alt1">
+        <label for="alt1">Jätteintresserad!</label>
+        <br>
+        <input type="radio" name="answer" id="alt2">
+        <label for="alt2">Jättejätteintresserad!!</label>
+        <br><br>
+        <button type="submit">Ta mig dit!</button>
+    </form>
+</body>
+</html>
